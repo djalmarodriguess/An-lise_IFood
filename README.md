@@ -5,7 +5,7 @@ Este projeto realiza uma análise exploratória de dados de restaurantes no iFoo
 
 ## 📁 Acesso ao Dataset
 - Dataset utilizado: [Link para o arquivo CSV](https://www.kaggle.com/datasets/ricardotachinardi/ifood-restaurants-data/data?select=ifood-restaurants-february-2021.csv)
-- Apresentação com hipóteses e conclusões: [Link para a apresentação PPT](#) _(Inserir link da apresentação aqui)_
+- Apresentação com hipóteses e conclusões: [Link para a apresentação PPT](https://docs.google.com/presentation/d/1gDoziJNxpxAA2cfZ-6DYOmMM9WnQ-x1k/edit?usp=drive_link&ouid=117108456216026152323&rtpof=true&sd=true)
 
 ![Apresentação Final Ifood](https://github.com/user-attachments/assets/3acca348-d5e7-4919-b8ca-2374c1996ab1)
 
@@ -24,21 +24,30 @@ O projeto foi desenvolvido com base nas seguintes hipóteses:
 - **Matplotlib e Seaborn**: Visualização de dados.
 - **Requests e BeautifulSoup**: Web scraping de dados adicionais do IBGE.
 
-## Metodologia STAR
+## Metodologia
 
-### 1. **Situação**
-Para explorar padrões de consumo no iFood, foi utilizado um dataset com informações de pedidos realizados em restaurantes no Brasil durante fevereiro de 2021. As colunas foram traduzidas para português e dados externos sobre códigos de municípios foram coletados do site do IBGE. Foram feitas manipulações no dataset para remover dados duplicados e ausentes, garantindo a qualidade das análises.
+### 1. Situação
+Para explorar padrões de consumo no iFood, foi utilizado um dataset com informações de pedidos realizados em restaurantes no Brasil durante fevereiro de 2021. As colunas foram traduzidas para português, e dados externos sobre códigos de municípios foram coletados do site do IBGE.
 
-### 2. **Tarefa**
+### 2. Web Scraping
+Para enriquecer a análise com informações sobre municípios e estados brasileiros, o projeto utilizou **web scraping** para extrair dados do site do [IBGE](https://www.ibge.gov.br/explica/codigos-dos-municipios.php). As bibliotecas **Requests** e **BeautifulSoup** foram usadas para realizar a extração. O processo seguiu as seguintes etapas:
+
+   - **Requisição HTTP**: Acessou a página que contém as tabelas com códigos de municípios e estados.
+   - **Extração de Dados**: Identificou e limpou as informações relevantes nas tabelas HTML.
+   - **Formatação e Limpeza**: Organizou os dados em um DataFrame do Pandas para integração com o dataset principal.
+
+Esses dados adicionais foram usados para enriquecer a análise e fornecer informações mais detalhadas sobre a localização dos restaurantes.
+
+### 3. Tarefa
 Testar cinco hipóteses diferentes relacionadas a fatores que influenciam a popularidade, eficiência e qualidade de restaurantes. Cada hipótese foi verificada através de análises descritivas e comparativas, com a criação de gráficos e cálculos de médias para suportar ou refutar as suposições.
 
-### 3. **Ação**
+### 4. **Ação**
 - **Importação de Dados**: Carregamento do dataset e limpeza de dados.
 - **Web Scraping**: Extração de informações de códigos de municípios do site do IBGE.
 - **Análises Exploratórias**: Visualizações e análises de correlação entre variáveis relevantes.
 - **Teste de Hipóteses**: Utilização de agrupamentos, médias e gráficos para validar ou refutar cada hipótese.
 
-### 4. **Resultado**
+### 5. **Resultado**
 #### Hipótese 1: Capitais concentram mais pedidos.
 - **Resultado**: Parcialmente verdadeira. Capitais como São Paulo e Rio de Janeiro estão entre as cidades com mais pedidos, mas grandes cidades não-capitais também têm demanda significativa.
 
