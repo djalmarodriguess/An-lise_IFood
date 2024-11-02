@@ -1,5 +1,7 @@
 # Análise de Restaurantes iFood (Fevereiro 2021)
 
+![Imagem Ifood](https://github.com/user-attachments/assets/05938d0b-e234-4cc2-bffc-08a906bce703)
+
 ## Visão Geral
 Este projeto realiza uma análise exploratória de dados de restaurantes no iFood com base no dataset de **fevereiro de 2021**, utilizando técnicas de manipulação de dados, visualizações e métodos de verificação de hipóteses. O principal objetivo é entender os fatores que influenciam a demanda, popularidade e satisfação dos clientes. O projeto utiliza o método STAR para organizar as conclusões, explorando cada hipótese formulada sobre o dataset.
 
