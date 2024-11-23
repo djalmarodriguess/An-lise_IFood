@@ -94,4 +94,10 @@ Para reproduzir as análises deste projeto:
 - [Documentação do Seaborn](https://seaborn.pydata.org/tutorial.html)
 - [IBGE](https://www.ibge.gov.br/explica/codigos-dos-municipios.php)
 
+---
 
+## 📧 Contato
+
+- **Confira meu** [Portifólio](https://www.datascienceportfol.io/djalmarodrigues1206)  
+- **Veja meu** [LinkedIn](https://www.linkedin.com/in/djalma-rodrigues/)  
+- **Conheça meu** [GitHub](https://github.com/djalmarodriguess)
